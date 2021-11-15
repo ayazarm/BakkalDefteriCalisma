@@ -1,0 +1,10 @@
+while True:
+    print("Bakkal Defterinize Hoş Geldiniz")
+    dosya = open("borclular.txt","a",encoding="utf-8")
+    borc_kisi = input("Borçlu Olan Kişiyi Girin : ")
+    borc_miktari = input("Borç Miktarını Girin : ")
+    dosya.write(borc_kisi)
+    dosya.write(" ")
+    dosya.write(borc_miktari)
+    dosya.write("\n")
+    dosya.close()
